@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: #000000;
+    color: #f8f8f8;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 0;
+  }
+  
+  header, footer {
+    background: rgba(255, 0, 0, 0.1);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container, footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ff4c4c;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff1a1a;
+  }
+  
+  #hero {
+    text-align: center;
+    padding: 100px 0;
+    background: rgba(255, 0, 0, 0.05);
+    border: 2px solid #ff1a1a33;
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    margin: 40px 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #ff1a1a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #cc0000;
+    transform: scale(1.05);
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background: #121212;
+    border: 1px solid #ff1a1a33;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  #skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+  }
+  
+  #skills li {
+    background: rgba(255, 0, 0, 0.1);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    border: 1px solid #ff1a1a33;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+  a {
+    color: #ff1a1a;
+    text-decoration: none;
+  }
+  
+  /* Slide-in Animations */
+  .slide-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+  }
+  
+  .slide-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
